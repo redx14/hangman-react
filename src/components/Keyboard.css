@@ -18,6 +18,8 @@
 
 .btn.inactive {
 	opacity: 0.3;
+	color: red;
+	border-color: red;
 }
 
 .btn:hover:not(:disabled),

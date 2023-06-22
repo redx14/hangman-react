@@ -15,8 +15,12 @@ function App() {
 
 	return (
 		<div id='main' style={{ textAlign: 'center' }}>
-			<h1>HANG MAN!</h1>
-			{show ? <Screen1 setShow={setShow} setWord={setWord} /> : <Screen2 setShow={setShow} word={word} />}
+			<h1 style={{ fontSize: '3rem' }}>HANG MAN!</h1>
+			{show ? (
+				<Screen1 setShow={setShow} setWord={setWord} />
+			) : (
+				<Screen2 setShow={setShow} setWord={setWord} word={word} />
+			)}
 		</div>
 	);
 }
